@@ -261,7 +261,7 @@ nav ul a:hover, nav ul a.active { color: var(--text); }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  align-items: center;
+  align-items: start;
 }
 
 .img-placeholder {
@@ -282,13 +282,11 @@ nav ul a:hover, nav ul a.active { color: var(--text); }
 }
 
 .about-img img {
-  width: 100%;
+  width: 75%;
   height: auto;
-  object-fit: contain;
-  object-position: center;
   display: block;
   border-radius: 2px;
-  background: #fff;
+  margin: 0 auto;
 }
 
 .about-text h2 { margin-bottom: 20px; }
@@ -426,14 +424,18 @@ nav ul a:hover, nav ul a.active { color: var(--text); }
 .project-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(160,100,110,0.12); }
 
 .project-img-placeholder {
-  aspect-ratio: 4/3;
-  background: var(--blush);
+  padding: 48px 20px;
+  background: linear-gradient(135deg, #f5e6e0, #ecddd8);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.85rem;
-  font-style: italic;
-  color: var(--text-light);
+  font-size: 3.5rem;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .project-body { padding: 24px; }
